@@ -20,3 +20,7 @@ ionic plugin add cordova-plugin-inappbrowser
 
 ----Install facebook plugin with our credentials we got from facebook.developers.com
 ionic plugin add cordova-plugin-facebook4 --save --variable APP_ID="XXXXXXXXXXXXXXXXXX" --variable APP_NAME="mychat"
+
+https://fa7f12a7-dbe5-4d74-8ef4-04e62257372c-bluemix.cloudant.com/mychat
+Key:selypeationstotherrstarz
+Password:a7bac233b50cc6dad095c887f9b98892a22ee84e

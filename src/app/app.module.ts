@@ -1,8 +1,11 @@
-import { NgModule, ErrorHandler } from '@angular/core';
-import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
+import { NgModule } from '@angular/core';
+import { IonicApp, IonicModule } from 'ionic-angular';
 import { MyApp } from './app.component';
-import { HomePage, LoginPage, AboutPage } from '../pages/pages';
-import { DataService } from '../providers/data-service';
+import { HomePage } from '../pages/home/home';
+import { LoginPage } from '../pages/login/login';
+import { AboutPage } from '../pages/about/about';
+import { Data } from '../providers/data';
+import { Facebook } from 'ionic-native';
 
 @NgModule({
   declarations: [
@@ -21,6 +24,6 @@ import { DataService } from '../providers/data-service';
     LoginPage,
     AboutPage
   ],
-  providers: [{ provide: ErrorHandler, useClass: IonicErrorHandler }, DataService]
+  providers: [Data,Facebook]
 })
-export class AppModule { }
+export class AppModule {}
